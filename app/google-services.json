@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "665820953069",
-    "project_id": "tutorly-5e1f8",
-    "storage_bucket": "tutorly-5e1f8.firebasestorage.app"
+    "project_number": "57750485249",
+    "project_id": "tutorly-876a0",
+    "storage_bucket": "tutorly-876a0.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:665820953069:android:091cb863f25f923ceccfe4",
+        "mobilesdk_app_id": "1:57750485249:android:2bb5b333d0b7fcbe41c300",
         "android_client_info": {
           "package_name": "com.example.Tutorly"
         }
@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyDUkrU_ezWSNvVieQkDibdDXa5MloUNpsw"
+          "current_key": "AIzaSyBSIl-ACfJL4f-3SY59Hb6GYsYz4GVkmeM"
         }
       ],
       "services": {

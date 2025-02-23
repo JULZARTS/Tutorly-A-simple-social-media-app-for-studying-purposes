@@ -64,7 +64,16 @@
                 android:text="Log In"
                 android:textColor="@color/white"
                 android:backgroundTint="#03A9F4"
-                android:layout_marginBottom="10dp"
+                />
+
+            <Button
+                android:layout_gravity="center"
+                android:id="@+id/buttonToThird"
+                android:layout_width="380dp"
+                android:layout_height="52dp"
+                android:text="Log In with Google"
+                android:textColor="#03A8F2"
+                android:backgroundTint="#FDFDFD"
                 />
         </LinearLayout>
     </LinearLayout>
