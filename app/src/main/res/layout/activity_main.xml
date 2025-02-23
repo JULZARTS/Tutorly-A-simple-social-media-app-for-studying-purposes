@@ -33,10 +33,12 @@
             android:layout_height="wrap_content">
 
             <EditText
+                android:id="@+id/email"
                 android:layout_gravity="center"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Enter Email"
+                android:hint="Enter Email"
+                android:textColorHint="#8F8F8F"
                 android:gravity="center_vertical"
                 android:background="@drawable/rounded_edittext2"
                 android:textColor="@color/darkgray"
@@ -44,36 +46,39 @@
                 android:paddingLeft="10dp" android:textSize="17dp"/>
 
             <EditText
+                android:id="@+id/password"
                 android:layout_marginTop="15dp"
                 android:layout_gravity="center"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Enter Password"
+                android:hint="Enter Password"
+                android:textColorHint="#8F8F8F"
                 android:gravity="center_vertical"
                 android:background="@drawable/rounded_edittext2"
                 android:textColor="@color/darkgray"
                 android:height="55dp" android:width="380dp"
                 android:paddingLeft="10dp" android:textSize="17dp"/>
 
-            <Button
+            <android.widget.Button
+                android:layout_marginBottom="10dp"
                 android:layout_marginTop="20dp"
                 android:layout_gravity="center"
-                android:id="@+id/buttonToSecond"
+                android:id="@+id/loginbtn"
                 android:layout_width="380dp"
                 android:layout_height="52dp"
                 android:text="Log In"
                 android:textColor="@color/white"
-                android:backgroundTint="#03A9F4"
+                android:background="@drawable/login"
                 />
 
-            <Button
+            <android.widget.Button
                 android:layout_gravity="center"
-                android:id="@+id/buttonToThird"
+                android:id="@+id/loginwithgooglebtn"
                 android:layout_width="380dp"
                 android:layout_height="52dp"
-                android:text="Log In with Google"
+                android:text="@string/log_in_with_google"
                 android:textColor="#03A8F2"
-                android:backgroundTint="#FDFDFD"
+                android:background="@drawable/loginwithgoogle"
                 />
         </LinearLayout>
     </LinearLayout>

@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Tutorly</string>
+    <string name="log_in_with_google">Log In with Google</string>
+    <string name="default_web_client_id">57750485249-iba1h1li99vnq2l58kmvjrcahile29ho.apps.googleusercontent.com</string>
 </resources>
