@@ -39,6 +39,7 @@ import com.google.firebase.database.FirebaseDatabase;
 public class MainActivity extends AppCompatActivity {
 
     EditText email, password;
+    TextView clickhere;
     Button log, googlelog;
     private FirebaseAuth auth;
     private GoogleSignInClient gsc;
@@ -49,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM);
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
 
         setContentView(R.layout.activity_main);
 
@@ -65,6 +66,7 @@ public class MainActivity extends AppCompatActivity {
         password = findViewById(R.id.password);
         log = findViewById(R.id.loginbtn);
         googlelog = findViewById(R.id.loginwithgooglebtn);
+        clickhere = findViewById(R.id.Clickhere);
 
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
                 .requestIdToken(getString(R.string.default_web_client_id))
@@ -101,9 +103,21 @@ public class MainActivity extends AppCompatActivity {
                     });
                 }
             }
+
         });
 
+        clickhere.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(MainActivity.this, SignupActivity.class);
+                startActivity(i);
+            }
+        });
+
+
     }
+
+
 
     private void gSignIn() {
         Intent intent = gsc.getSignInIntent();
