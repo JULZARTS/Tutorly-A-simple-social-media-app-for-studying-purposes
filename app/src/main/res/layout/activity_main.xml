@@ -15,19 +15,26 @@
         android:layout_height="500dp"
         android:orientation="vertical"
         >
-        <Button
+
+        <android.widget.Button
+            android:layout_width="134dp"
+            android:layout_height="125dp"
             android:layout_gravity="center"
+            android:width="90dp"
+            android:height="100dp"
+            android:background="@drawable/tutor"
+            android:textColor="@color/black" />
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:height="100dp"
-            android:width="90dp"
-            android:text="Logo"
-            android:textColor="@color/white"
-            android:backgroundTint="#25ACF4"
-           />
+            android:textColor="@color/black"
+            android:text="[ Tutorly ]"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            />
 
         <LinearLayout
-            android:layout_marginTop="70dp"
+            android:layout_marginTop="50dp"
             android:orientation="vertical"
             android:layout_gravity="center"
             android:layout_width="wrap_content"
@@ -42,7 +49,7 @@
                 android:textColorHint="#8F8F8F"
                 android:gravity="center_vertical"
                 android:background="@drawable/rounded_edittext2"
-                android:textColor="@color/darkgray"
+                android:textColor="@color/black"
                 android:height="55dp" android:width="380dp"
                 android:paddingLeft="10dp" android:textSize="17dp"/>
 
@@ -56,7 +63,7 @@
                 android:textColorHint="#8F8F8F"
                 android:gravity="center_vertical"
                 android:background="@drawable/rounded_edittext2"
-                android:textColor="@color/darkgray"
+                android:textColor="@color/black"
                 android:height="55dp" android:width="380dp"
                 android:paddingLeft="10dp" android:textSize="17dp"/>
 
@@ -78,13 +85,13 @@
                 android:layout_width="380dp"
                 android:layout_height="52dp"
                 android:text="@string/log_in_with_google"
-                android:textColor="#03A8F2"
+                android:textColor="#000000"
                 android:background="@drawable/loginwithgoogle"
                 />
 
             <TextView
                 android:id="@+id/Clickhere"
-                android:textColor="#25ABF2"
+                android:textColor="#000000"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/no_account_yet_click_here"

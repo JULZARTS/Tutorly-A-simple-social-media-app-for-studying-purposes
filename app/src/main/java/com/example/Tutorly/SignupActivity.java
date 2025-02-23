@@ -30,7 +30,7 @@ public class SignupActivity extends AppCompatActivity {
     EditText email, pass, confirmpass;
     Button btnSignup;
     FirebaseAuth auth;
-    TextView txt1;
+    TextView clickhere;
     Drawable bg, bg2;
     GradientDrawable gradientDrawable, gradientDrawable2;
 
@@ -44,7 +44,7 @@ public class SignupActivity extends AppCompatActivity {
         confirmpass = findViewById(R.id.confirm_password);
         btnSignup = findViewById(R.id.signupbtn);
         auth = FirebaseAuth.getInstance();
-        txt1 = findViewById(R.id.Text1);
+        clickhere = findViewById(R.id.Clickhere);
 
         //backgroundssss
         bg = pass.getBackground();
@@ -95,7 +95,7 @@ public class SignupActivity extends AppCompatActivity {
             }
         });
 
-        txt1.setOnClickListener(new View.OnClickListener() {
+        clickhere.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(SignupActivity.this, MainActivity.class);
