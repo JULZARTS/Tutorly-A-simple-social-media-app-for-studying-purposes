@@ -72,7 +72,6 @@ public class MainActivity extends AppCompatActivity {
                 .build();
 
         gsc = GoogleSignIn.getClient(this, gso);
-
         googlelog.setOnClickListener(view -> gSignIn());
 
         log.setOnClickListener(new View.OnClickListener() {
