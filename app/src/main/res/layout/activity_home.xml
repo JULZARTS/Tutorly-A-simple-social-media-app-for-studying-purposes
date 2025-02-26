@@ -1,0 +1,347 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <!-- Scrollable content -->
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/navigationBar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:paddingBottom="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <TextView
+                    android:paddingLeft="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tutorly"
+                    android:textSize="25sp"
+                    android:textColor="#25ACF4"
+                    android:textStyle="bold"
+                    />
+
+                <View
+                    android:layout_width="255dp"
+                    android:layout_height="wrap_content"
+
+                    />
+                <Button
+                    android:id="@+id/ToNotifications"
+                    android:backgroundTint="#25ACF4"
+                    android:gravity="end"
+                    android:layout_width="40dp"
+                    android:layout_height="47dp"
+                    android:text="s"
+                  />
+            </LinearLayout>
+
+            <!-- Add your scrollable content here -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+                <TextView
+                    android:textStyle="bold"
+                    android:paddingLeft="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Categories"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+                <View
+                    android:layout_width="182dp"
+                    android:layout_height="match_parent"
+                    />
+                <Button
+                    android:textSize="14sp"
+                    android:background="@color/Transparent"
+                    android:text="See all >"
+                    android:layout_gravity="center"
+                    android:layout_width="115dp"
+                    android:layout_height="40dp"/>
+            </LinearLayout>
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:showDividers="middle"
+                    android:divider="@drawable/empty_divider"
+                    android:paddingLeft="10dp"
+                    >
+
+                    <android.widget.Button
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:height="80dp"
+                        android:width="50dp"
+                        android:background="@drawable/circle"
+                        android:textColor="@color/white"
+                        />
+
+                    <android.widget.Button
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:height="80dp"
+                        android:width="50dp"
+                        android:background="@drawable/circle"
+                        android:textColor="@color/white"
+                        />
+
+                    <android.widget.Button
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:height="80dp"
+                        android:width="50dp"
+                        android:background="@drawable/circle"
+                        android:textColor="@color/white"
+                        />
+
+                    <android.widget.Button
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:height="80dp"
+                        android:width="50dp"
+                        android:background="@drawable/circle"
+                        android:textColor="@color/white"
+                        />
+
+                    <android.widget.Button
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:height="80dp"
+                        android:width="50dp"
+                        android:background="@drawable/circle"
+                        android:textColor="@color/white"
+                        />
+
+                    <android.widget.Button
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:height="80dp"
+                        android:width="50dp"
+                        android:background="@drawable/circle"
+                        android:textColor="@color/white"
+                        />
+
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <!-- More views -->
+            <!-- Add your scrollable content here -->
+            <LinearLayout
+                android:paddingTop="25dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+                <TextView
+                    android:textStyle="bold"
+                    android:paddingLeft="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Suggested"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+                <View
+                    android:layout_width="182dp"
+                    android:layout_height="match_parent"
+                    />
+                <Button
+                    android:textSize="14sp"
+                    android:background="@color/Transparent"
+                    android:text="See all >"
+                    android:layout_gravity="center"
+                    android:layout_width="115dp"
+                    android:layout_height="40dp"/>
+            </LinearLayout>
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:showDividers="middle"
+                    android:divider="@drawable/empty_divider2"
+                    android:paddingLeft="10dp"
+                    >
+
+                    <android.widget.Button
+                        android:layout_width="150dp"
+                        android:layout_height="190dp"
+                        android:background="@drawable/rectangle"
+                        android:textColor="@color/white"
+                        android:text="Julius Ignacio"
+                        android:gravity="bottom|left"
+                        android:paddingBottom="6dp"
+                        android:paddingLeft="10dp"
+                        android:textAllCaps="false"
+                        />
+
+                    <android.widget.Button
+                        android:layout_width="150dp"
+                        android:layout_height="190dp"
+                        android:background="@drawable/rectangle"
+                        android:textColor="@color/white"
+                        android:text="Julius Ignacio"
+                        android:gravity="bottom|left"
+                        android:paddingBottom="6dp"
+                        android:paddingLeft="10dp"
+                        android:textAllCaps="false"
+                        />
+
+
+                    <android.widget.Button
+                        android:layout_width="150dp"
+                        android:layout_height="190dp"
+                        android:background="@drawable/rectangle"
+                        android:textColor="@color/white"
+                        android:text="Julius Ignacio"
+                        android:gravity="bottom|left"
+                        android:paddingBottom="6dp"
+                        android:paddingLeft="10dp"
+                        android:textAllCaps="false"
+                        />
+
+
+                    <android.widget.Button
+                        android:layout_width="150dp"
+                        android:layout_height="190dp"
+                        android:background="@drawable/rectangle"
+                        android:textColor="@color/white"
+                        android:text="Julius Ignacio"
+                        android:gravity="bottom|left"
+                        android:paddingBottom="6dp"
+                        android:paddingLeft="10dp"
+                        android:textAllCaps="false"
+                        />
+
+
+
+
+
+
+
+
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:paddingTop="25dp"
+                android:textStyle="bold"
+                android:paddingLeft="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Check out people near you!"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <ImageView
+                android:padding="10dp"
+                android:layout_width="390dp"
+                android:layout_height="250dp"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center|bottom"
+                android:background="@drawable/rounded_image"
+                android:src="@drawable/static_map"
+                android:scaleType="fitXY"
+                android:contentDescription="Example_image" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="200dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+    <!-- Navigation Bar -->
+    <LinearLayout
+        android:gravity="center"
+        android:id="@+id/navigationBar"
+        android:layout_width="500dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center|bottom"
+        android:orientation="horizontal"
+        android:background="@drawable/bordered"
+
+        android:showDividers="middle"
+        android:divider="@drawable/empty_divider3"
+        >
+
+
+
+        <Button
+            android:id="@+id/ToHome"
+            android:layout_gravity="center"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+           android:backgroundTint="#25ACF4" />
+
+        <Button
+            android:id="@+id/ToFinduser"
+            android:layout_gravity="center"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:backgroundTint="#25ACF4" />
+
+        <Button
+            android:id="@+id/ToMessages"
+            android:layout_gravity="center"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:backgroundTint="#25ACF4" />
+
+        <Button
+            android:id="@+id/ToProfile"
+            android:layout_gravity="center"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:backgroundTint="#25ACF4" />
+    </LinearLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

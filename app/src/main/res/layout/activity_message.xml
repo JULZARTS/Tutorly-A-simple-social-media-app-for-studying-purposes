@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:id="@+id/main"
+    android:layout_height="match_parent">
+
+    <!-- Scrollable content -->
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/navigationBar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="15dp">
+
+                <TextView
+                    android:id="@+id/centerText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Messages"
+                    android:textColor="#25ACF4"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:paddingTop="25dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+                <EditText
+                    android:textColor="@color/darkgray"
+                    android:text="Search a conversation"
+                    android:paddingLeft="13dp"
+                    android:background="@drawable/rectangle"
+                    android:backgroundTint="#DEDEDE"
+                    android:layout_width="370dp"
+                    android:layout_height="45dp"/>
+            </LinearLayout>
+
+            <!-- RecyclerView for Chat List -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/chatListView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:scrollbars="vertical"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Navigation Bar -->
+    <LinearLayout
+        android:gravity="center"
+        android:id="@+id/navigationBar"
+        android:layout_width="500dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center|bottom"
+        android:orientation="horizontal"
+        android:background="@drawable/bordered"
+        android:showDividers="middle"
+        android:divider="@drawable/empty_divider3">
+
+        <Button
+            android:id="@+id/BackToHome"
+            android:layout_gravity="center"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:backgroundTint="#25ACF4" />
+
+        <Button
+            android:id="@+id/ToMaps"
+            android:layout_gravity="center"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:backgroundTint="#25ACF4" />
+
+        <Button
+            android:layout_gravity="center"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:backgroundTint="#25ACF4" />
+
+        <Button
+            android:id="@+id/ToProfile"
+            android:layout_gravity="center"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:backgroundTint="#25ACF4" />
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,11 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Base.Theme.Tutorly" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Set primary colors -->
+        <item name="colorPrimary">#FFFFFF</item>  <!-- White Background -->
+        <item name="colorOnPrimary">#000000</item>  <!-- Black Text -->
+        <item name="android:statusBarColor">#FFFFFF</item>  <!-- White Status Bar -->
+        <item name="android:forceDarkAllowed">false</item>  <!-- Disable forced dark mode -->
+    </style>
+
+    <style name="Theme.Tutorly" parent="Base.Theme.Tutorly"/>
+</resources>

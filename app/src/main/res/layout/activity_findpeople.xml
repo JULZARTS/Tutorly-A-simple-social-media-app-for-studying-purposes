@@ -1,0 +1,623 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:id="@+id/main"
+    android:layout_height="match_parent">
+
+    <!-- Scrollable content -->
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/navigationBar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <!-- More views -->
+            <!-- Add your scrollable content here -->
+            <LinearLayout
+                android:layout_gravity="center"
+                android:paddingTop="25dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+                <EditText
+                    android:textColor="@color/darkgray"
+                    android:text="Find a user"
+                    android:paddingLeft="13dp"
+                    android:background="@drawable/rectangle"
+                    android:backgroundTint="#DEDEDE"
+                    android:layout_width="370dp"
+                    android:layout_height="45dp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginTop="35dp"
+                android:textStyle="bold"
+                android:paddingLeft="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Suggested"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:layout_width="380dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <LinearLayout
+
+                    android:layout_width="380dp"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:background="@drawable/picturee"/>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="9dp"
+                        android:layout_marginLeft="10dp">
+
+
+                        <!-- First TextView -->
+                        <TextView
+                            android:id="@+id/textView1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:text="Sara Duthirty"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            android:textStyle="bold"
+                            android:textSize="16sp" />
+
+                        <!-- Second TextView -->
+                        <LinearLayout
+                            app:layout_constraintTop_toBottomOf="@id/textView1"
+                            app:layout_constraintStart_toStartOf="parent"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+
+
+                        </LinearLayout>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="10dp"/>
+
+                <LinearLayout
+
+                    android:layout_width="380dp"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:background="@drawable/picturee"/>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="9dp"
+                        android:layout_marginLeft="10dp">
+
+                        <!-- First TextView -->
+                        <TextView
+                            android:id="@+id/textView11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:text="Mark Zuckerberg"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            android:textStyle="bold"
+                            android:textSize="16sp" />
+
+                        <!-- Second TextView -->
+                        <LinearLayout
+                            app:layout_constraintTop_toBottomOf="@id/textView11"
+                            app:layout_constraintStart_toStartOf="parent"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+
+
+                        </LinearLayout>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </LinearLayout>
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="10dp"/>
+                <LinearLayout
+
+                    android:layout_width="380dp"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:background="@drawable/picturee"/>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="9dp"
+                        android:layout_marginLeft="10dp">
+
+                        <!-- First TextView -->
+                        <TextView
+                            android:id="@+id/textView111"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:text="Katniss Everdeen"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            android:textStyle="bold"
+                            android:textSize="16sp" />
+
+                        <!-- Second TextView -->
+                        <LinearLayout
+                            app:layout_constraintTop_toBottomOf="@id/textView111"
+                            app:layout_constraintStart_toStartOf="parent"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+
+
+                        </LinearLayout>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="10dp"/>
+                <LinearLayout
+
+                    android:layout_width="380dp"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:background="@drawable/picturee"/>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="9dp"
+                        android:layout_marginLeft="10dp">
+
+                        <!-- First TextView -->
+                        <TextView
+                            android:id="@+id/textView1111"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:text="John Duck"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            android:textStyle="bold"
+                            android:textSize="16sp" />
+
+                        <!-- Second TextView -->
+                        <LinearLayout
+                            app:layout_constraintTop_toBottomOf="@id/textView1111"
+                            app:layout_constraintStart_toStartOf="parent"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+
+                        </LinearLayout>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </LinearLayout>
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="10dp"/>
+                <LinearLayout
+
+                    android:layout_width="380dp"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:background="@drawable/picturee"/>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="9dp"
+                        android:layout_marginLeft="10dp">
+
+                        <!-- First TextView -->
+                        <TextView
+                            android:id="@+id/textView11111"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:text="Jeffrey Dahmer"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            android:textStyle="bold"
+                            android:textSize="16sp" />
+
+                        <!-- Second TextView -->
+                        <LinearLayout
+                            app:layout_constraintTop_toBottomOf="@id/textView11111"
+                            app:layout_constraintStart_toStartOf="parent"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+
+
+                        </LinearLayout>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="10dp"/>
+                <LinearLayout
+
+                    android:layout_width="380dp"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:background="@drawable/picturee"/>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="9dp"
+                        android:layout_marginLeft="10dp">
+
+                        <!-- First TextView -->
+                        <TextView
+                            android:id="@+id/textView111111"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:text="Juan Dela Cruz"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            android:textStyle="bold"
+                            android:textSize="16sp" />
+
+                        <!-- Second TextView -->
+                        <LinearLayout
+                            app:layout_constraintTop_toBottomOf="@id/textView111111"
+                            app:layout_constraintStart_toStartOf="parent"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+
+
+                        </LinearLayout>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </LinearLayout>
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="10dp"/>
+                <LinearLayout
+
+                    android:layout_width="380dp"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:background="@drawable/picturee"/>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="9dp"
+                        android:layout_marginLeft="10dp">
+
+                        <!-- First TextView -->
+                        <TextView
+                            android:id="@+id/textView1111111"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:text="Jenny Santos"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            android:textStyle="bold"
+                            android:textSize="16sp" />
+
+                        <!-- Second TextView -->
+                        <LinearLayout
+                            app:layout_constraintTop_toBottomOf="@id/textView1111111"
+                            app:layout_constraintStart_toStartOf="parent"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+
+
+                        </LinearLayout>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="10dp"/>
+                <LinearLayout
+
+                    android:layout_width="380dp"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:background="@drawable/picturee"/>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="9dp"
+                        android:layout_marginLeft="10dp">
+
+                        <!-- First TextView -->
+                        <TextView
+                            android:id="@+id/textView11111111"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:text="Camille Sanchez"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            android:textStyle="bold"
+                            android:textSize="16sp" />
+
+                        <!-- Second TextView -->
+                        <LinearLayout
+                            app:layout_constraintTop_toBottomOf="@id/textView11111111"
+                            app:layout_constraintStart_toStartOf="parent"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+
+                        </LinearLayout>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </LinearLayout>
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="10dp"/>
+                <LinearLayout
+
+                    android:layout_width="380dp"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:background="@drawable/picturee"/>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="9dp"
+                        android:layout_marginLeft="10dp">
+
+                        <!-- First TextView -->
+                        <TextView
+                            android:id="@+id/textView111111111"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:text="Charice Anne De Padua"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            android:textStyle="bold"
+                            android:textSize="16sp" />
+
+                        <!-- Second TextView -->
+                        <LinearLayout
+                            app:layout_constraintTop_toBottomOf="@id/textView111111111"
+                            app:layout_constraintStart_toStartOf="parent"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+
+
+                        </LinearLayout>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="10dp"/>
+                <LinearLayout
+
+                    android:layout_width="380dp"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:background="@drawable/picturee"/>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="9dp"
+                        android:layout_marginLeft="10dp">
+
+                        <!-- First TextView -->
+                        <TextView
+                            android:id="@+id/textView1111111111"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:text="Jamie Navarette"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            android:textStyle="bold"
+                            android:textSize="16sp" />
+
+                        <!-- Second TextView -->
+                        <LinearLayout
+                            app:layout_constraintTop_toBottomOf="@id/textView1111111111"
+                            app:layout_constraintStart_toStartOf="parent"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+
+
+                        </LinearLayout>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="10dp"/>
+                <LinearLayout
+
+                    android:layout_width="380dp"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:background="@drawable/picturee"/>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="9dp"
+                        android:layout_marginLeft="10dp">
+
+                        <!-- First TextView -->
+                        <TextView
+                            android:id="@+id/textView11111111111"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:text="Drink Water"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            android:textStyle="bold"
+                            android:textSize="16sp" />
+
+                        <!-- Second TextView -->
+                        <LinearLayout
+                            app:layout_constraintTop_toBottomOf="@id/textView11111111111"
+                            app:layout_constraintStart_toStartOf="parent"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+
+                        </LinearLayout>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"/>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Navigation Bar -->
+    <LinearLayout
+        android:gravity="center"
+        android:id="@+id/navigationBar"
+        android:layout_width="500dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center|bottom"
+        android:orientation="horizontal"
+        android:background="@drawable/bordered"
+
+        android:showDividers="middle"
+        android:divider="@drawable/empty_divider3"
+        >
+
+
+
+        <Button
+            android:id="@+id/BackToHome"
+            android:layout_gravity="center"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:backgroundTint="#25ACF4" />
+
+        <Button
+            android:layout_gravity="center"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:backgroundTint="#25ACF4" />
+
+        <Button
+            android:id="@+id/ToMessages"
+            android:layout_gravity="center"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:backgroundTint="#25ACF4" />
+
+        <Button
+            android:id="@+id/ToProfile"
+            android:layout_gravity="center"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:backgroundTint="#25ACF4" />
+    </LinearLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

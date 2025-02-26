@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="end"
+    android:padding="5dp">
+
+    <!-- Timestamp -->
+    <TextView
+        android:id="@+id/messageTimestamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12:00 PM"
+        android:textSize="12sp"
+        android:textColor="#A0A0A0"
+        android:paddingEnd="5dp"/>
+
+    <!-- Message Bubble -->
+    <TextView
+        android:id="@+id/messageText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="250dp"
+        android:background="@drawable/message_bubble_right"
+        android:padding="10dp"
+        android:text="Hello!"
+        android:textSize="16sp"
+        android:textColor="@color/white"/>
+</LinearLayout>

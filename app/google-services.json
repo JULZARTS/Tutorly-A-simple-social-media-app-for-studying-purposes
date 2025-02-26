@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "57750485249",
+    "project_id": "tutorly-876a0",
+    "storage_bucket": "tutorly-876a0.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:57750485249:android:2bb5b333d0b7fcbe41c300",
+        "android_client_info": {
+          "package_name": "com.example.Tutorly"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSIl-ACfJL4f-3SY59Hb6GYsYz4GVkmeM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
